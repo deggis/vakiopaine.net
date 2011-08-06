@@ -2,3 +2,119 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+
+body {
+  background-color: #FEC418;
+  font-family: arial;
+  color: #620A00;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  margin-top: -2px;
+}
+
+h2 {
+  font-size: 200%;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #620A00;
+}
+
+hr {
+  height: 1px;
+  border-top: 1px solid #a50;
+  border-bottom: none;
+}
+
+a               { color: #620A00; text-decoration: underline; }
+a:visited       { color: #620A00; text-decoration: underline; }
+a:active        { color: #620A00; text-decoration: underline; }
+a:hover         { color: #BA3E02; text-decoration: underline; }
+
+
+a#menu                                  { color: #620A00; text-decoration: none; }
+a#menu:visited  { color: #620A00; text-decoration: none; }
+a#menu:active           { color: #620A00; text-decoration: none; }
+a#menu:hover            { color: #BA3E02; text-decoration: none; }
+
+
+div#body {
+  width: 700px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+table#menu {
+    width: 750;
+    padding: 0px;
+
+  }
+  
+    tr#menu {
+      padding: 0px;
+    
+    }
+    
+      td#menuvasen {
+        width: 200px;
+        text-align: right;
+        vertical-align: top;
+      }
+      
+      td#menukeski {
+        width: 300px;
+        text-align: center;
+      }
+      
+        img#logo {
+          align: center;
+        }
+      
+      td#menuoikea {
+        width: 200px;
+        text-align: left;
+        vertical-align: top;
+      }
+      
+  table#sivu {
+    width: 700px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+    tr#sivu {
+      border: none;
+      padding: 0px;
+      margin: 0px;      
+    }
+    
+      td#sivuvasen {
+        border: none;
+        margin: 0px;    
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+
+        background-repeat: no-repeat;
+        background-color: #000000;
+        width: 190px;
+        height: 600px;
+        text-align: right;
+        vertical-align: top;
+      }
+      
+      td#sivuoikea {
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 460px;
+        text-align: left;
+        vertical-align: top;
+      }
+
