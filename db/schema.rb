@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110806142042) do
+ActiveRecord::Schema.define(:version => 20110806150703) do
+
+  create_table "events", :force => true do |t|
+    t.string   "title_fi"
+    t.text     "desc_fi"
+    t.string   "title_en"
+    t.text     "desc_en"
+    t.date     "date"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "events", ["id"], :name => "index_events_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
