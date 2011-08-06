@@ -5,7 +5,7 @@ en:
         image: image
   plugins:
     newsitems:
-      title: Newsitems
+      title: Uutiset
   admin:
     newsitems:
       actions:
