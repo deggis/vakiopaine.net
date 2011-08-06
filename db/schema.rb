@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110806150703) do
+ActiveRecord::Schema.define(:version => 20110806152145) do
 
   create_table "events", :force => true do |t|
     t.string   "title_fi"
@@ -36,6 +36,18 @@ ActiveRecord::Schema.define(:version => 20110806150703) do
     t.string   "image_uid"
     t.string   "image_ext"
   end
+
+  create_table "newsitems", :force => true do |t|
+    t.string   "title_fi"
+    t.string   "title_en"
+    t.text     "desc_fi"
+    t.text     "desc_en"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "newsitems", ["id"], :name => "index_newsitems_on_id"
 
   create_table "page_part_translations", :force => true do |t|
     t.integer  "page_part_id"

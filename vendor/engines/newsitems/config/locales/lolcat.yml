@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    newsitems:
+      title: Newsitems
+  admin:
+    newsitems:
+      actions:
+        create_new: CREATE NEW Newsitem
+        reorder: REORDR Newsitems
+        reorder_done: DUN REORDERIN Newsitems
+      records:
+        title: Newsitems
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Newsitems YET. CLICK "CREATE NEW Newsitem" 2 ADD UR FURST newsitem.
+      newsitem:
+        view_live_html: VIEW DIS newsitem LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS newsitem
+        delete: REMOOV DIS newsitem FOREVR
+  newsitems:
+    show:
+      other: OTHR Newsitems

@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    newsitems:
+      title: Newsitems
+  admin:
+    newsitems:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Newsitem
+        reorder: Réordonner les Newsitems
+        reorder_done: Fin de réordonnancement des Newsitems
+      records:
+        title: Newsitems
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Newsitem. Cliquer sur "Créer un(e) nouve(au/l/lle) Newsitem" pour créer votre premi(er/ère) newsitem.'
+      newsitem:
+        view_live_html: Voir ce(t/tte) newsitem <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) newsitem
+        delete: Supprimer définitivement ce(t/tte) newsitem
+  newsitems:
+    show:
+      other: Autres Newsitems

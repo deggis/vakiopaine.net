@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    newsitems:
+      title: Newsitems
+  admin:
+    newsitems:
+      actions:
+        create_new: Add New Newsitem
+        reorder: Reorder Newsitems
+        reorder_done: Done Reordering Newsitems
+      records:
+        title: Newsitems
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Newsitems yet. Click "Add New Newsitem" to add your first newsitem.
+      newsitem:
+        view_live_html: View this newsitem live <br/><em>(opens in a new window)</em>
+        edit: Edit this newsitem
+        delete: Remove this newsitem forever
+  newsitems:
+    show:
+      other: Other Newsitems

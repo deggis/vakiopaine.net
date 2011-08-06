@@ -2,6 +2,7 @@ PATH
   remote: vendor/engines
   specs:
     refinerycms-events (1.0)
+    refinerycms-newsitems (1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -155,4 +156,5 @@ DEPENDENCIES
   refinerycms (~> 1.0.3)
   refinerycms-events (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
+  refinerycms-newsitems (= 1.0)!
   sqlite3

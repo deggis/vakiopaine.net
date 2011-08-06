@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    newsitems:
+      title: Newsitems
+  admin:
+    newsitems:
+      actions:
+        create_new: Lag en ny Newsitem
+        reorder: Endre rekkefølgen på Newsitems
+        reorder_done: Ferdig å endre rekkefølgen Newsitems
+      records:
+        title: Newsitems
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Newsitems enda. Klikk på "Lag en ny Newsitem" for å legge til din første newsitem.
+      newsitem:
+        view_live_html: Vis hvordan denne newsitem ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne newsitem
+        delete: Fjern denne newsitem permanent
+  newsitems:
+    show:
+      other: Andre Newsitems

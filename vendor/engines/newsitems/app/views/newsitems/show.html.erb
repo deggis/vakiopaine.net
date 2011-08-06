@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @newsitem.title_fi %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title Fi</h1>
+    <p>
+      <%=raw @newsitem.title_fi %>
+    </p>
+  </section>
+  <section>
+    <h1>Title En</h1>
+    <p>
+      <%=raw @newsitem.title_en %>
+    </p>
+  </section>
+  <section>
+    <h1>Desc Fi</h1>
+    <p>
+      <%=raw @newsitem.desc_fi %>
+    </p>
+  </section>
+  <section>
+    <h1>Desc En</h1>
+    <p>
+      <%=raw @newsitem.desc_en %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="newsitems">
+      <% @newsitems.each do |newsitem| %>
+        <li>
+          <%= link_to newsitem.title_fi, newsitem_path(newsitem) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::NewsitemsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_newsitems_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_newsitem_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::NewsitemsController.sortable? and Newsitem.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Newsitems"),
+                 admin_newsitems_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Newsitems"),
+                 admin_newsitems_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

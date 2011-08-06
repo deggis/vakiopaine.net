@@ -59,3 +59,4 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # END USER DEFINED
 
 gem 'refinerycms-events', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-newsitems', '1.0', :path => 'vendor/engines'
