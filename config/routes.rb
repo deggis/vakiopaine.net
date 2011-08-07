@@ -2,6 +2,12 @@ Vakkari2011::Application.routes.draw do
   get "home/index"
   root :to => "home#index"
 
+  resources :newsitems, :path => "uutiset"
+  resources :guestbook_notes, :path => "vieraskirja"
+  resources :theater_shows, :path => "teatteri"
+  resources :events, :path => "tapahtumat"
+  resources :exhibitions, :path => "nayttelyt"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
