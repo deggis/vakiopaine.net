@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    exhibitions:
+      title: Exhibitions
+  admin:
+    exhibitions:
+      actions:
+        create_new: Add New Exhibition
+        reorder: Reorder Exhibitions
+        reorder_done: Done Reordering Exhibitions
+      records:
+        title: Exhibitions
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Exhibitions yet. Click "Add New Exhibition" to add your first exhibition.
+      exhibition:
+        view_live_html: View this exhibition live <br/><em>(opens in a new window)</em>
+        edit: Edit this exhibition
+        delete: Remove this exhibition forever
+  exhibitions:
+    show:
+      other: Other Exhibitions

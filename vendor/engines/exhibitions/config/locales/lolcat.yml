@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    exhibitions:
+      title: Exhibitions
+  admin:
+    exhibitions:
+      actions:
+        create_new: CREATE NEW Exhibition
+        reorder: REORDR Exhibitions
+        reorder_done: DUN REORDERIN Exhibitions
+      records:
+        title: Exhibitions
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Exhibitions YET. CLICK "CREATE NEW Exhibition" 2 ADD UR FURST exhibition.
+      exhibition:
+        view_live_html: VIEW DIS exhibition LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS exhibition
+        delete: REMOOV DIS exhibition FOREVR
+  exhibitions:
+    show:
+      other: OTHR Exhibitions

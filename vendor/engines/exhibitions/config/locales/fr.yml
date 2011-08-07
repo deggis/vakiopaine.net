@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    exhibitions:
+      title: Exhibitions
+  admin:
+    exhibitions:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Exhibition
+        reorder: Réordonner les Exhibitions
+        reorder_done: Fin de réordonnancement des Exhibitions
+      records:
+        title: Exhibitions
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Exhibition. Cliquer sur "Créer un(e) nouve(au/l/lle) Exhibition" pour créer votre premi(er/ère) exhibition.'
+      exhibition:
+        view_live_html: Voir ce(t/tte) exhibition <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) exhibition
+        delete: Supprimer définitivement ce(t/tte) exhibition
+  exhibitions:
+    show:
+      other: Autres Exhibitions

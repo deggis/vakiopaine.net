@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    exhibitions:
+      title: Exhibitions
+  admin:
+    exhibitions:
+      actions:
+        create_new: Lag en ny Exhibition
+        reorder: Endre rekkefølgen på Exhibitions
+        reorder_done: Ferdig å endre rekkefølgen Exhibitions
+      records:
+        title: Exhibitions
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Exhibitions enda. Klikk på "Lag en ny Exhibition" for å legge til din første exhibition.
+      exhibition:
+        view_live_html: Vis hvordan denne exhibition ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne exhibition
+        delete: Fjern denne exhibition permanent
+  exhibitions:
+    show:
+      other: Andre Exhibitions

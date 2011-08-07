@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    exhibitions:
+      title: Exhibitions
+  admin:
+    exhibitions:
+      actions:
+        create_new: Maak een nieuwe Exhibition
+        reorder: Wijzig de volgorde van de Exhibitions
+        reorder_done: Klaar met het wijzingen van de volgorde van de Exhibitions
+      records:
+        title: Exhibitions
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Exhibitions. Druk op 'Maak een nieuwe Exhibition' om de eerste aan te maken.
+      exhibition:
+        view_live_html: Bekijk deze exhibition op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze exhibition
+        delete: Verwijder deze exhibition voor eeuwig
+  exhibitions:
+    show:
+      other: Andere Exhibitions

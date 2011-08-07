@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="exhibitions">
+    <% @exhibitions.each do |exhibition| %>
+      <li>
+        <%= link_to exhibition.title_fi, exhibition_path(exhibition) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
