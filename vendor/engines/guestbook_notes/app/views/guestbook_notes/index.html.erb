@@ -1,11 +1,20 @@
-<% content_for :body_content_left do %>
-  <ul id="guestbook_notes">
+<table id="sivu">
+<tr id="sivu">
+<td id="sivuvasen" style="background-image: url('/images/vas_vieraskirja.jpg');">
+  <h3><a href="../" id="takaisin">Takaisin</a></h3>
+</td>
+<td id="sivuoikea">
+  <h2>Vakiopaine (baari)</h2> 
+  <p>"Kuunnelkaa nyt! Nää on tärkeitä asioita."</p>
+
+  <h3>Vieraskirja</h3>
+  <ul class="no_indent">
     <% @guestbook_notes.each do |guestbook_note| %>
       <li>
-        <%= link_to guestbook_note.writer_name, guestbook_note_path(guestbook_note) %>
+        <%= render guestbook_note %>
       </li>
     <% end %>
   </ul>
-<% end %>
-
-<%= render :partial => "/shared/content_page" %>
+</td>
+</tr>
+</table>

@@ -6,9 +6,7 @@ class NewsitemsController < ApplicationController
 
 
   def index
-    # you can use meta fields from your model instead (e.g. browser_title)
-    # by swapping @page for @newsitem in the line below:
-    present(@page)
+    page
   end
 
   def show
@@ -20,7 +18,17 @@ class NewsitemsController < ApplicationController
   end
 
   def page
-    @newsitems = Newsitem.order('created_at DESC').offset(4*(params[:page].to_i)).limit(4)
+    page_n = params[:page].to_i
+
+    if !page_n
+        page_n = 0
+    end
+
+    @newsitems = Newsitem.order('created_at DESC').offset(4*page_n).limit(4)
+    @next_page = page_n + 1
+    if page_n > 0
+        @prev_page = page_n - 1
+    end
     present(@page)
   end
 
