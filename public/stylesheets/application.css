@@ -118,3 +118,8 @@ table#menu {
         vertical-align: top;
       }
 
+ul.no_indent {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}

@@ -1,5 +1,3 @@
-<% content_for :body_content_left do %>
-
 <table id="sivu">
 <tr id="sivu">
 <td id="sivuvasen" style="background-image: url('/images/vas_uutiset.jpg');">
@@ -10,7 +8,7 @@
   <p>"Kuunnelkaa nyt! Nää on tärkeitä asioita."</p>
 
   <h3>Uutiset</h3>
-  <ul id="newsitems">
+  <ul class="no_indent">
     <% @newsitems.each do |newsitem| %>
       <li>
         <%= render newsitem %>
@@ -20,7 +18,3 @@
 </td>
 </tr>
 </table>
-
-<% end %>
-
-<%= render :partial => "/shared/content_page" %>
