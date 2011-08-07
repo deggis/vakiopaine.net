@@ -1,11 +1,20 @@
-<% content_for :body_content_left do %>
-  <ul id="exhibitions">
+<table id="sivu">
+<tr id="sivu">
+<td id="sivuvasen" style="background-image: url('/images/vas_teatteri.jpg');">
+  <h3><a href="../" id="takaisin">Takaisin</a></h3>
+</td>
+<td id="sivuoikea">
+  <h2>Vakiopaine (baari)</h2> 
+  <p>Vakiopaineen seinät on pyhitetty taiteelle ja näyttelytilasta kiinnostuneet voivat ottaa yhteyttä numeroon (014) 620 776 tai tulla käymään baarilla osoitteessa Kauppakatu 6, 40100 Jyväskylä.</p>
+
+  <h3>Näyttelyt</h3>
+  <ul class="no_indent">
     <% @exhibitions.each do |exhibition| %>
       <li>
-        <%= link_to exhibition.title_fi, exhibition_path(exhibition) %>
+        <%= render exhibition %>
       </li>
     <% end %>
   </ul>
-<% end %>
-
-<%= render :partial => "/shared/content_page" %>
+</td>
+</tr>
+</table>
