@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    guestbook_notes:
+      title: Guestbook Notes
+  admin:
+    guestbook_notes:
+      actions:
+        create_new: Maak een nieuwe Guestbook Note
+        reorder: Wijzig de volgorde van de Guestbook Notes
+        reorder_done: Klaar met het wijzingen van de volgorde van de Guestbook Notes
+      records:
+        title: Guestbook Notes
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Guestbook Notes. Druk op 'Maak een nieuwe Guestbook Note' om de eerste aan te maken.
+      guestbook_note:
+        view_live_html: Bekijk deze guestbook note op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze guestbook note
+        delete: Verwijder deze guestbook note voor eeuwig
+  guestbook_notes:
+    show:
+      other: Andere Guestbook Notes

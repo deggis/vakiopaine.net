@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::GuestbookNotesController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_guestbook_notes_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_guestbook_note_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::GuestbookNotesController.sortable? and GuestbookNote.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Guestbook Notes"),
+                 admin_guestbook_notes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Guestbook Notes"),
+                 admin_guestbook_notes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

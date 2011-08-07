@@ -3,6 +3,7 @@ PATH
   specs:
     refinerycms-events (1.0)
     refinerycms-exhibitions (1.0)
+    refinerycms-guestbook_notes (1.0)
     refinerycms-newsitems (1.0)
     refinerycms-theater_shows (1.0)
 
@@ -158,6 +159,7 @@ DEPENDENCIES
   refinerycms (~> 1.0.3)
   refinerycms-events (= 1.0)!
   refinerycms-exhibitions (= 1.0)!
+  refinerycms-guestbook_notes (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-newsitems (= 1.0)!
   refinerycms-theater_shows (= 1.0)!

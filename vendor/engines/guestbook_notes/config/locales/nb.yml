@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    guestbook_notes:
+      title: Guestbook Notes
+  admin:
+    guestbook_notes:
+      actions:
+        create_new: Lag en ny Guestbook Note
+        reorder: Endre rekkefølgen på Guestbook Notes
+        reorder_done: Ferdig å endre rekkefølgen Guestbook Notes
+      records:
+        title: Guestbook Notes
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Guestbook Notes enda. Klikk på "Lag en ny Guestbook Note" for å legge til din første guestbook note.
+      guestbook_note:
+        view_live_html: Vis hvordan denne guestbook note ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne guestbook note
+        delete: Fjern denne guestbook note permanent
+  guestbook_notes:
+    show:
+      other: Andre Guestbook Notes

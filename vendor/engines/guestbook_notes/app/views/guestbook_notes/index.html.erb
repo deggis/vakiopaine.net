@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="guestbook_notes">
+    <% @guestbook_notes.each do |guestbook_note| %>
+      <li>
+        <%= link_to guestbook_note.writer_name, guestbook_note_path(guestbook_note) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

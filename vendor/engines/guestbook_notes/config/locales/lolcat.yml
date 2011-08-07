@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    guestbook_notes:
+      title: Guestbook Notes
+  admin:
+    guestbook_notes:
+      actions:
+        create_new: CREATE NEW Guestbook Note
+        reorder: REORDR Guestbook Notes
+        reorder_done: DUN REORDERIN Guestbook Notes
+      records:
+        title: Guestbook Notes
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Guestbook Notes YET. CLICK "CREATE NEW Guestbook Note" 2 ADD UR FURST guestbook note.
+      guestbook_note:
+        view_live_html: VIEW DIS guestbook note LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS guestbook note
+        delete: REMOOV DIS guestbook note FOREVR
+  guestbook_notes:
+    show:
+      other: OTHR Guestbook Notes
