@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    theater_shows:
+      title: Theater Shows
+  admin:
+    theater_shows:
+      actions:
+        create_new: Maak een nieuwe Theater Show
+        reorder: Wijzig de volgorde van de Theater Shows
+        reorder_done: Klaar met het wijzingen van de volgorde van de Theater Shows
+      records:
+        title: Theater Shows
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Theater Shows. Druk op 'Maak een nieuwe Theater Show' om de eerste aan te maken.
+      theater_show:
+        view_live_html: Bekijk deze theater show op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze theater show
+        delete: Verwijder deze theater show voor eeuwig
+  theater_shows:
+    show:
+      other: Andere Theater Shows

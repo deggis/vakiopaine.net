@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110806152145) do
+ActiveRecord::Schema.define(:version => 20110807153046) do
 
   create_table "events", :force => true do |t|
     t.string   "title_fi"
@@ -168,6 +168,20 @@ ActiveRecord::Schema.define(:version => 20110806152145) do
   add_index "slugs", ["locale"], :name => "index_slugs_on_locale"
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "theater_shows", :force => true do |t|
+    t.string   "title_fi"
+    t.string   "title_en"
+    t.text     "description_fi"
+    t.text     "description_en"
+    t.date     "starts"
+    t.date     "ends"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "theater_shows", ["id"], :name => "index_theater_shows_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"

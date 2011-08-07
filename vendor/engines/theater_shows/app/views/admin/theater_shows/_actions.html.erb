@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::TheaterShowsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_theater_shows_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_theater_show_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::TheaterShowsController.sortable? and TheaterShow.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Theater Shows"),
+                 admin_theater_shows_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Theater Shows"),
+                 admin_theater_shows_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

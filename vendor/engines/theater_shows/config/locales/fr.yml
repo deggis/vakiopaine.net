@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    theater_shows:
+      title: Theater Shows
+  admin:
+    theater_shows:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Theater Show
+        reorder: Réordonner les Theater Shows
+        reorder_done: Fin de réordonnancement des Theater Shows
+      records:
+        title: Theater Shows
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Theater Show. Cliquer sur "Créer un(e) nouve(au/l/lle) Theater Show" pour créer votre premi(er/ère) theater show.'
+      theater_show:
+        view_live_html: Voir ce(t/tte) theater show <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) theater show
+        delete: Supprimer définitivement ce(t/tte) theater show
+  theater_shows:
+    show:
+      other: Autres Theater Shows

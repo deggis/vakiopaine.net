@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    theater_shows:
+      title: Theater Shows
+  admin:
+    theater_shows:
+      actions:
+        create_new: Lag en ny Theater Show
+        reorder: Endre rekkefølgen på Theater Shows
+        reorder_done: Ferdig å endre rekkefølgen Theater Shows
+      records:
+        title: Theater Shows
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Theater Shows enda. Klikk på "Lag en ny Theater Show" for å legge til din første theater show.
+      theater_show:
+        view_live_html: Vis hvordan denne theater show ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne theater show
+        delete: Fjern denne theater show permanent
+  theater_shows:
+    show:
+      other: Andre Theater Shows

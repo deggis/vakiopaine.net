@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    theater_shows:
+      title: Theater Shows
+  admin:
+    theater_shows:
+      actions:
+        create_new: CREATE NEW Theater Show
+        reorder: REORDR Theater Shows
+        reorder_done: DUN REORDERIN Theater Shows
+      records:
+        title: Theater Shows
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Theater Shows YET. CLICK "CREATE NEW Theater Show" 2 ADD UR FURST theater show.
+      theater_show:
+        view_live_html: VIEW DIS theater show LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS theater show
+        delete: REMOOV DIS theater show FOREVR
+  theater_shows:
+    show:
+      other: OTHR Theater Shows

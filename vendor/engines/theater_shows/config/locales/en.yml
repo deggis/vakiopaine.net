@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    theater_shows:
+      title: Theater Shows
+  admin:
+    theater_shows:
+      actions:
+        create_new: Add New Theater Show
+        reorder: Reorder Theater Shows
+        reorder_done: Done Reordering Theater Shows
+      records:
+        title: Theater Shows
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Theater Shows yet. Click "Add New Theater Show" to add your first theater show.
+      theater_show:
+        view_live_html: View this theater show live <br/><em>(opens in a new window)</em>
+        edit: Edit this theater show
+        delete: Remove this theater show forever
+  theater_shows:
+    show:
+      other: Other Theater Shows

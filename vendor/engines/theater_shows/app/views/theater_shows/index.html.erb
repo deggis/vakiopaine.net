@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="theater_shows">
+    <% @theater_shows.each do |theater_show| %>
+      <li>
+        <%= link_to theater_show.title_fi, theater_show_path(theater_show) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
