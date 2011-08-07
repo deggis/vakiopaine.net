@@ -123,3 +123,10 @@ ul.no_indent {
     margin-left: 0;
     padding-left: 0;
 }
+
+
+a.back              { color: #FEC418; text-decoration: none; }
+a.back:visited      { color: #FEC418; text-decoration: none; }
+a.back:active       { color: #FEC418; text-decoration: none; }
+a.back:hover        { color: #BA3E02; text-decoration: none; }
+
