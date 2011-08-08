@@ -1,0 +1,8 @@
+<b>
+  <%= raw event.title_fi %>
+  <% if event.date %>
+    (<%= event.date.strftime("%d.%m.%Y") %>)
+  <% end %>
+</b>
+<%= raw event.desc_fi %>
+
