@@ -23,6 +23,10 @@ h3 {
   color: #620A00;
 }
 
+li {
+  margin-bottom: 2em;
+}
+
 #notify {
     background-color: #F4A83D;
     border-bottom: 1px solid #D6800C;
