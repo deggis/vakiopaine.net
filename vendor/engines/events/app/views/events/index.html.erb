@@ -8,6 +8,13 @@
   <p>Vakiopaineessa on toisinaan performangeja.</p>
 
   <h3>Tulevat tapahtumat</h3>
+
+  <p>Näytetään meneillään olevat ja tulevat tapahtumat. Menneetkin tapahtumat sisältävän listan löydät
+  <%= link_to "täältä", "kaikki/" %>.
+  </p>
+
+  <hr />
+
   <ul class="no_indent">
     <% @upcoming_events.each do |event| %>
       <li>

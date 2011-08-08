@@ -4,7 +4,7 @@ require 'mysql2'
 require 'migrate_helpers'
 require 'migrate_settings'
 
-client = Mysql2::Client.new(:host => db_host(), :username => db_user(), :password => db_pass(), :database => db_name())
+client = Mysql2::Client.new(:host => db_host(), :username => db_user(), :password => db_pass(), :database => db_name(), :port => db_port())
 res = client.query("SELECT * from uutiset")
 
 results = res.as_json
