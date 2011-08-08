@@ -1,5 +1,5 @@
 <b>
   <%= raw newsitem.title_fi %>
+  (<%= newsitem.created_at.strftime("%d.%m.%Y") %>)
 </b>
 <%= raw newsitem.desc_fi %>
-<em><%= newsitem.created_at %></em>
