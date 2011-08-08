@@ -4,6 +4,8 @@ Vakkari2011::Application.routes.draw do
 
   # These would belong to the corresponing engines..
   match "/teatteri/kaikki/" => "theater_shows#all"
+  match "/nayttelyt/kaikki/" => "exhibitions#all"
+  match "/tapahtumat/kaikki/" => "tapahtumat#all"
 
 
   resources :newsitems, :path => "uutiset"

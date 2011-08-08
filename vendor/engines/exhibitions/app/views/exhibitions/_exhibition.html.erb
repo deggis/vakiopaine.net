@@ -1,5 +1,10 @@
 <b>
   <%= raw exhibition.title_fi %>
 </b>
+<% if exhibition.starts && exhibition.ends %>
+  (<%= exhibition.starts.strftime("%d.%m.%Y") %>
+  -
+  <%= exhibition.ends.strftime("%d.%m.%Y") %>)
+<% end %>
+
 <%= raw exhibition.description_fi %>
-<em><%= exhibition.created_at %></em>
