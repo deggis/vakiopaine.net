@@ -1,5 +1,9 @@
 <b>
   <%= raw theater_show.title_fi %>
 </b>
+  <% if theater_show.starts && theater_show.ends %>
+    (<%= theater_show.starts.strftime("%d.%m.%Y") %>
+    -
+    <%= theater_show.ends.strftime("%d.%m.%Y") %>)
+  <% end %>
 <%= raw theater_show.description_fi %>
-<em><%= theater_show.created_at %></em>

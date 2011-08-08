@@ -5,11 +5,16 @@
 </td>
 <td id="sivuoikea">
   <h2>Vakiopaine (baari)</h2> 
-  <p>"Kuunnelkaa nyt! Nää on tärkeitä asioita."</p>
+  <p>Katutason alla Vakiopaineen alakerrassa on Ad Adstra -teatteriryhmän käyttämä teatteritila.</p>
 
   <h3>Teatteri</h3>
+
+  <p>Näytetään menossa olevat tai tulevat teatteriesitykset. Koko listan näet
+  <%= link_to "täältä", "kaikki/" %>.
+  </p>
+
   <ul class="no_indent">
-    <% @theater_shows.each do |theater_show| %>
+    <% @upcoming_theater_shows.each do |theater_show| %>
       <li>
         <%= render theater_show %>
       </li>
