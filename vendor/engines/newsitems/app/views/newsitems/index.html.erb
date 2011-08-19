@@ -1,23 +1,17 @@
-<td id="sivuoikea">
-  <h2>Vakiopaine (baari)</h2> 
-  <p>"Kuunnelkaa nyt! Nää on tärkeitä asioita."</p>
+<p>"Kuunnelkaa nyt! Nää on tärkeitä asioita."</p>
 
-  <h3>Uutiset</h3>
+<h3>Uutiset</h3>
 
-  <% if @prev_page %>
-      <a href="/uutiset/sivu/<%= @prev_page %>">Uudemmat</a>
-  <% end %>
-  <% if @next_page %>
-    <a href="/uutiset/sivu/<%= @next_page %>">Vanhemmat</a>
-  <% end %>
+<% if @prev_page %>
+  <a href="/uutiset/sivu/<%= @prev_page %>">Uudemmat</a>
+<% end %>
+<% if @next_page %>
+<a href="/uutiset/sivu/<%= @next_page %>">Vanhemmat</a>
+<% end %>
 
-  <ul class="no_indent">
-    <% @newsitems.each do |newsitem| %>
-      <li>
-        <%= render newsitem %>
-      </li>
-    <% end %>
-  </ul>
-</td>
-</tr>
-</table>
+<ul class="no_indent">
+<% @newsitems.each do |newsitem| %>
+  <li>
+    <%= render newsitem %>
+  </li>
+<% end %>
