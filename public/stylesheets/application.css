@@ -167,6 +167,7 @@ a.back:hover        { color: #BA3E02; text-decoration: none; }
   float: right;
   width: 31em;
   display: table-cell;
+  min-height: 30em;
 }
 
 #page_content h1 {
