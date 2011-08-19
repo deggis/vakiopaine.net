@@ -32,5 +32,14 @@
 <%= yield %>
 <% end %>
 
+<% if "#{RAILS_ENV}" == "production" %>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1536120-1";
+urchinTracker();
+</script>
+<% end %>
+
 </body>
 </html>
