@@ -3,11 +3,12 @@
   Formatting applies to all frontend.
 */
 
+/* TODO: contains both page & menu, tidying needed. */
+
 body {
   background-color: #FEC418;
   font-family: arial;
   color: #620A00;
-  text-align: center;
   padding: 0px;
   margin: 0px;
   margin-top: -2px;
@@ -129,4 +130,40 @@ a.back:hover        { color: #BA3E02; text-decoration: none; }
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#page {
+  width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  display: table;
+}
+
+.spacer {
+  clear: both;
+}
+
+#page_row { display: table-row; }
+
+#page_navigation {
+  width: 192px;
+  display: table-cell;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+#page_navigation span {
+  float: right;
+  margin-top: 0.6em;
+  margin-right: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#page_content {
+  text-align: left;
+  float: right;
+  width: 31em;
+  display: table-cell;
 }

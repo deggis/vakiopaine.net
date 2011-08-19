@@ -3,7 +3,7 @@ class NewsitemsController < ApplicationController
 #  before_filter :find_all_newsitems
   before_filter :find_first_newsitems
   before_filter :find_page
-
+  before_filter :find_sideimage
 
   def index
     page
@@ -46,5 +46,8 @@ protected
     @page = Page.where(:link_url => "/newsitems").first
   end
 
+  def find_sideimage
+    @sidebar_image_url = '/images/vas_uutiset.jpg'
+  end
 
 end

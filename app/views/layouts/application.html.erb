@@ -10,9 +10,22 @@
 
 <div id="body">
 
-<%= yield %>
-
+<% if @sidebar_image_url %>
+  <div id="page">
+    <div id="page_row">
+      <div id="page_navigation" style="background-image: url(<%= @sidebar_image_url %>);">
+        <span><%= link_to 'Takaisin', '/', :class => "back" %></span>
+      </div>
+      <div id="page_content">
+        <%= yield %>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
 </div>
+<% else %>
+<%= yield %>
+<% end %>
 
 </body>
 </html>
