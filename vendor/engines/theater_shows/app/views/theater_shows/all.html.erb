@@ -1,25 +1,15 @@
-<table id="sivu">
-<tr id="sivu">
-<td id="sivuvasen" style="background-image: url('/images/vas_teatteri.jpg');">
-  <h3><%= link_to 'Takaisin', '/', :class => "back" %></h3>
-</td>
-<td id="sivuoikea">
-  <h2>Vakiopaine (baari)</h2> 
-  <p>Katutason alla Vakiopaineen alakerrassa on Ad Adstra -teatteriryhmän käyttämä teatteritila.</p>
+<p>Katutason alla Vakiopaineen alakerrassa on Ad Adstra -teatteriryhmän käyttämä teatteritila.</p>
 
-  <h3>Teatteri</h3>
+<h3>Teatteri</h3>
 
-  <p>Listassa kaikki vuoden 2005 alun jälkeen pidetyt esitykset. Ajankohtaisemman listan näet
-  <%= link_to "täältä", "../" %>.
-  </p>
+<p>Listassa kaikki vuoden 2005 alun jälkeen pidetyt esitykset. Ajankohtaisemman listan näet
+<%= link_to "täältä", "../" %>.
+</p>
 
-  <ul class="no_indent">
-    <% @past_theater_shows.each do |theater_show| %>
-      <li>
-        <%= render theater_show %>
-      </li>
-    <% end %>
-  </ul>
-</td>
-</tr>
-</table>
+<ul class="no_indent">
+<% @past_theater_shows.each do |theater_show| %>
+  <li>
+    <%= render theater_show %>
+  </li>
+<% end %>
+</ul>

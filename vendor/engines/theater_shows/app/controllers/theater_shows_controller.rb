@@ -3,6 +3,7 @@ class TheaterShowsController < ApplicationController
   before_filter :find_upcoming_theater_shows
   before_filter :find_past_theater_shows
   before_filter :find_page
+  before_filter :find_sideimage
 
   def index
     # you can use meta fields from your model instead (e.g. browser_title)
@@ -36,6 +37,10 @@ protected
 
   def find_page
     @page = Page.where(:link_url => "/theater_shows").first
+  end
+
+  def find_sideimage
+    @sidebar_image_url = '/images/vas_teatteri.jpg'
   end
 
 end
