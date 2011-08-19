@@ -1,27 +1,16 @@
-<table id="sivu">
-<tr id="sivu">
-<td id="sivuvasen" style="background-image: url('/images/vas_tapahtumat.jpg');">
-  <h3><%= link_to 'Takaisin', '/', :class => "back"  %></h3>
-</td>
-<td id="sivuoikea">
-  <h2>Vakiopaine (baari)</h2> 
-  <p>Vakiopaineessa on toisinaan performangeja.</p>
+<p>Vakiopaineessa on toisinaan performangeja.</p>
 
-  <h3>Tulevat tapahtumat</h3>
+<h3>Tulevat tapahtumat</h3>
 
-  <p>Näytetään meneillään olevat ja tulevat tapahtumat. Menneetkin tapahtumat sisältävän listan löydät
-  <%= link_to "täältä", "kaikki/" %>.
-  </p>
+<p>Näytetään meneillään olevat ja tulevat tapahtumat. Menneetkin tapahtumat sisältävän listan löydät
+<%= link_to "täältä", "kaikki/" %>.
+</p>
 
-  <hr />
+<hr />
 
-  <ul class="no_indent">
-    <% @upcoming_events.each do |event| %>
-      <li>
-        <%= render event %>
-      </li>
-    <% end %>
-  </ul>
-</td>
-</tr>
-</table>
+<ul class="no_indent">
+<% @upcoming_events.each do |event| %>
+  <li>
+    <%= render event %>
+  </li>
+<% end %>
