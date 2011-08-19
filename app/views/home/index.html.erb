@@ -1,11 +1,11 @@
 <div id="menubody">
 
   <div id="menu_left_content">
-    <div class="menuitem">
+    <div class="menuitem" id="news_container">
       <a href="/uutiset/" class="menu">Uutiset</a>
       <p>Vakiopaine on auki kahdesta (kesäisin kuudesta) kahteen. Tosin vappuna avataan jo kymmeneltä.</p>
     </div>
-    <div class="menuitem">
+    <div class="menuitem" id="theater_container">
       <a href="/teatteri/" class="menu">Teatteri</a>
       <p>Katutason alapuolella pyörii myös huoneteatteri.</p>
     </div>
@@ -19,16 +19,20 @@
   </div>
 
   <div id="menu_center_content">
-   <img src="/images/ukko.jpg" id="logo" />
+   <img src="/images/ukko.jpg" id="logo_default" />
+   <img src="/images/ukko_news.jpg" id="logo_news" class="alternative_logo" />
+   <img src="/images/ukko_theater.jpg" id="logo_theater" class="alternative_logo" />
+   <img src="/images/ukko_event.jpg" id="logo_event" class="alternative_logo" />
+   <img src="/images/ukko_gallery.jpg" id="logo_gallery" class="alternative_logo" />
   </div>
 
 
   <div id="menu_right_content">
-    <div class="menuitem">
+    <div class="menuitem" id="event_container">
       <a href="/tapahtumat/" class="menu">Tapahtumat</a>
       <p>Etenkin soittoa ja laulua. Ja tanssia. Ja performangeja.</p>
     </div>
-    <div class="menuitem">
+    <div class="menuitem" id="gallery_container">
       <a href="/nayttelyt/" class="menu">Näyttelyt</a>
       <p>Vakiopaineesta saapi vastikkeeta galleriatilaa. Ja tulitikkuja!</p>
     </div>
@@ -41,3 +45,23 @@
     </div>
   </div>
 </div>
+
+<script type='text/javascript'>
+
+var current;
+
+function switch_logo(new_logo) {
+  if (current) current.fadeOut(500);
+  $(new_logo).fadeIn(500);
+  current = $(new_logo);
+}
+
+$(document).ready(function(){
+    $('#event_container').bind('mouseenter', function(i) { switch_logo('#logo_event'); } );
+    $('#news_container').bind('mouseenter', function(i) { switch_logo('#logo_news'); } );
+    $('#theater_container').bind('mouseenter', function(i) { switch_logo('#logo_theater'); } );
+    $('#gallery_container').bind('mouseenter', function(i) { switch_logo('#logo_gallery'); } );
+    $('.menuitem').bind('mouseleave', function(i) { current.fadeOut(500); } );
+});
+
+</script>

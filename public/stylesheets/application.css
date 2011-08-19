@@ -33,18 +33,27 @@ li {
   margin-right: auto;
   width: 45em;
   overflow: hidden;
+  position: relative;
 }
 
 #menu_left_content, #menu_right_content {
   width: 30%;
 }
 #menu_center_content {
-  width: 40%;
+  width: 35%;
+  margin-left: 1em;
 }
 #menu_left_content, #menu_center_content, #menu_right_content {
   float: left;
   padding: 0;
 }
+
+#menu_center_content {
+  position: relative;
+  float: left;
+}
+
+#menu_right_content { float: right; }
 #menu_left_content   { text-align: right; }
 #menu_center_content { text-align: center; }
 #menu_right_content  { text-align: left; }
@@ -109,4 +118,15 @@ a.back:hover        { color: #BA3E02; text-decoration: none; }
 #menu_right_content .menuitem:hover {
   border-left: 1em solid #dEa408;
   padding-left: 0.5em;
+}
+
+.alternative_logo {
+  display: none;
+}
+
+
+#menu_center_content img {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
