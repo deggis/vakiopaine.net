@@ -51,8 +51,8 @@
 var current;
 
 function switch_logo(new_logo) {
-  if (current) current.fadeOut(500);
-  $(new_logo).fadeIn(500);
+  if (current) current.hide();
+  $(new_logo).show();
   current = $(new_logo);
 }
 
@@ -61,7 +61,6 @@ $(document).ready(function(){
     $('#news_container').bind('mouseenter', function(i) { switch_logo('#logo_news'); } );
     $('#theater_container').bind('mouseenter', function(i) { switch_logo('#logo_theater'); } );
     $('#gallery_container').bind('mouseenter', function(i) { switch_logo('#logo_gallery'); } );
-    $('.menuitem').bind('mouseleave', function(i) { current.fadeOut(500); } );
 });
 
 </script>
