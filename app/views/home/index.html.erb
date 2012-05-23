@@ -3,17 +3,14 @@
   <div id="menu_left_content">
     <div class="menuitem" id="news_container">
       <a href="/uutiset/" class="menu">Uutiset</a>
-      <p>Vakiopaine on auki kahdesta (kesäisin kuudesta) kahteen. Tosin vappuna avataan jo kymmeneltä.</p>
+      <p><%= copywriting('Uutiset', { :scope => 'Etusivu', :default => 'Vakiopaine on auki kahdesta (kesäisin kuudesta) kahteen. Tosin vappuna avataan jo kymmeneltä.' }) %></p>
     </div>
     <div class="menuitem" id="theater_container">
       <a href="/teatteri/" class="menu">Teatteri</a>
-      <p>Katutason alapuolella pyörii myös huoneteatteri.</p>
+      <p><%= copywriting('Teatteri', { :scope => 'Etusivu', :default => 'Katutason alapuolella pyörii myös huoneteatteri.' }) %></p>
     </div>
     <div class="menuitem">
-      <p>
-        <strong>Tule käymään</strong><br />
-        <span>Kauppakatu 6, Jyväskylä</span>
-      </p>
+      <p><%=raw copywriting('Vasen HTML-alakehoitus', { :scope => 'Etusivu', :default => '<strong>Tule käymään</strong><br /><span>Kauppakatu 6, Jyväskylä</span>' }) %></p>
     </div>
 
   </div>
@@ -30,21 +27,17 @@
   <div id="menu_right_content">
     <div class="menuitem" id="event_container">
       <a href="/tapahtumat/" class="menu">Tapahtumat</a>
-      <p>Etenkin soittoa ja laulua. Ja tanssia. Ja performangeja.</p>
+      <p><%= copywriting('Tapahtumat', { :scope => 'Etusivu', :default => 'Etenkin soittoa ja laulua. Ja tanssia. Ja performangeja.' }) %></p>
     </div>
     <div class="menuitem" id="gallery_container">
       <a href="/nayttelyt/" class="menu">Näyttelyt</a>
-      <p>Vakiopaineesta saapi vastikkeetta galleriatilaa. Ja tulitikkuja!</p>
+      <p><%= copywriting('Näyttelyt', { :scope => 'Etusivu', :default => 'Vakiopaineesta saapi vastikkeetta galleriatilaa. Ja tulitikkuja!' }) %></p>
     </div>
     <div class="menuitem" id="links_container">
-      <a href="/linkit/" class="menu">Linkkejä muuanne</a>
+      <a href="/linkit/" class="menu">Linkkejä muualle</a>
     </div>
     <div class="menuitem">
-      <p>
-        <strong>Ota yhteyttä</strong><br />
-        <span>baari &auml;t vakiopaine.net</span><br />
-        <span>puh. (014) 620 776</span>
-      </p>
+      <p><%=raw copywriting('Oikea HTML-alakehoitus', { :scope => 'Etusivu', :default => '<strong>Ota yhteyttä</strong><br /><span>baari &auml;t vakiopaine.net</span><br /><span>puh. (014) 620 776</span>' }) %></p>
     </div>
   </div>
 </div>
@@ -64,6 +57,7 @@ $(document).ready(function(){
     $('#news_container').bind('mouseenter', function(i) { switch_logo('#logo_news'); } );
     $('#theater_container').bind('mouseenter', function(i) { switch_logo('#logo_theater'); } );
     $('#gallery_container').bind('mouseenter', function(i) { switch_logo('#logo_gallery'); } );
+    $('#links_container').bind('mouseenter', function(i) { switch_logo('#logo_default'); } );
 });
 
 </script>
