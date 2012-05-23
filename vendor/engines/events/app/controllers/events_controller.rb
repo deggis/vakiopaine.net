@@ -41,4 +41,8 @@ protected
     @sidebar_image_url = '/images/vas_tapahtumat.jpg'
   end
 
+  def find_description
+    @header_pagename = 'Tapahtumat'
+  end
+
 end

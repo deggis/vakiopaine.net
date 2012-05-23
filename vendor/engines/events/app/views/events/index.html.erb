@@ -1,8 +1,10 @@
-<p>Vakiopaineessa on toisinaan performangeja.</p>
+<h3><%= @page.title %> </h3>
 
-<h3>Tulevat tapahtumat</h3>
+<%=raw @page.content_for(:body) %>
 
-<p>Näytetään meneillään olevat ja tulevat tapahtumat. Menneetkin tapahtumat sisältävän listan löydät
+<hr />
+
+<p>Näytetään vain <strong>meneillään olevat</strong> tai <strong>tulevat tapahtumat</strong>. Menneetkin tapahtumat sisältävän listan löydät
 <%= link_to "täältä", "kaikki/" %>.
 </p>
 
