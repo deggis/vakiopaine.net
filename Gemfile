@@ -55,6 +55,7 @@ end
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
+gem 'refinerycms-copywriting',  '~> 1.0.9'
 
 # END USER DEFINED
 
