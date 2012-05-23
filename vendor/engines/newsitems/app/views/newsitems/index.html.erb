@@ -1,6 +1,8 @@
-<p>"Kuunnelkaa nyt! Nää on tärkeitä asioita."</p>
+<h3><%= @page.title %></h3>
 
-<h3>Uutiset</h3>
+<%=raw @page.content_for(:body) %>
+
+<hr />
 
 <% if @prev_page %>
   <a href="/uutiset/sivu/<%= @prev_page %>">Uudemmat</a>

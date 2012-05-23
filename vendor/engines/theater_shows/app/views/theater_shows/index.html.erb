@@ -1,10 +1,14 @@
-<p>Katutason alla Vakiopaineen alakerrassa on Ad Adstra -teatteriryhmän käyttämä teatteritila.</p>
+<h3><%= @page.title %></h3>
 
-<h3>Teatteri</h3>
+<%=raw @page.content_for(:body) %>
 
-<p>Näytetään menossa olevat tai tulevat teatteriesitykset. Koko listan näet
+<hr />
+
+<p>Näytetään <strong>menossa olevat tai tulevat</strong> teatteriesitykset. Koko listan näet
 <%= link_to "täältä", "kaikki/" %>.
 </p>
+
+<hr />
 
 <ul class="no_indent">
 <% @upcoming_theater_shows.each do |theater_show| %>
