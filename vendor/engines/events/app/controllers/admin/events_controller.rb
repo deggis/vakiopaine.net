@@ -4,7 +4,7 @@ module Admin
     crudify :event,
             :title_attribute => 'title_fi',
             :xhr_paging => true,
-            :order => "created_at DESC",
+            :order => "date DESC",
             :sortable => false
 
   end
