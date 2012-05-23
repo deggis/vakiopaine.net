@@ -110,6 +110,7 @@ GEM
       friendly_id_globalize3 (~> 3.2.1)
       refinerycms-core (= 1.0.11)
     refinerycms-base (1.0.11)
+    refinerycms-copywriting (1.0.9)
     refinerycms-core (1.0.11)
       acts_as_indexed (~> 0.7)
       awesome_nested_set (~> 2.0)
@@ -167,6 +168,7 @@ PLATFORMS
 
 DEPENDENCIES
   refinerycms (~> 1.0.11)
+  refinerycms-copywriting (~> 1.0.9)
   refinerycms-events (= 1.0)!
   refinerycms-exhibitions (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
