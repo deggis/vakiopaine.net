@@ -1,7 +1,9 @@
-<p>Vakiopaineen seinät on pyhitetty taiteelle ja näyttelytilasta kiinnostuneet voivat ottaa yhteyttä numeroon (014) 620 776 tai tulla käymään baarilla osoitteessa Kauppakatu 6, 40100 Jyväskylä.</p>
+<h3><%= @page.title %></h3>
 
-<h3>Näyttelyt</h3>
-<p>Näytetään menossa tai tulossa olevat näyttelyt. Arkisto löytyy
+<%=raw @page.content_for(:body)%>
+
+<hr />
+<p>Näytetään <strong>menossa tai tulossa olevat</strong> näyttelyt. Arkisto löytyy
 <%= link_to "täältä", "kaikki/" %>.
 </p>
 <hr />
