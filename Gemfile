@@ -33,7 +33,7 @@ gem 'sqlite3'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '~> 1.0.3'
+gem 'refinerycms',              '~> 1.0.11'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
@@ -62,6 +62,4 @@ gem 'refinerycms-events', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-newsitems', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-theater_shows', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-exhibitions', '1.0', :path => 'vendor/engines'
-gem 'refinerycms-guestbook_notes', '1.0', :path => 'vendor/engines'
-
-gem 'mysql2'
+# gem 'refinerycms-guestbook_notes', '1.0', :path => 'vendor/engines'
