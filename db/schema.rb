@@ -11,7 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110807161104) do
+ActiveRecord::Schema.define(:version => 20120523193529) do
+
+  create_table "copywriting_phrase_translations", :force => true do |t|
+    t.integer  "copywriting_phrase_id"
+    t.string   "locale"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "copywriting_phrase_translations", ["copywriting_phrase_id"], :name => "index_c8fbec01a288d0aef8ba987126084c4d06953304"
+  add_index "copywriting_phrase_translations", ["locale"], :name => "index_copywriting_phrase_translations_on_locale"
+
+  create_table "copywriting_phrases", :force => true do |t|
+    t.string   "name"
+    t.text     "default"
+    t.text     "value"
+    t.string   "scope"
+    t.integer  "page_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "phrase_type"
+  end
+
+  add_index "copywriting_phrases", ["name", "scope"], :name => "index_copywriting_phrases_on_name_and_scope"
 
   create_table "events", :force => true do |t|
     t.string   "title_fi"
@@ -86,7 +110,6 @@ ActiveRecord::Schema.define(:version => 20110807161104) do
     t.datetime "updated_at"
   end
 
-  add_index "page_part_translations", ["locale"], :name => "index_page_part_translations_on_locale"
   add_index "page_part_translations", ["page_part_id"], :name => "index_page_part_translations_on_page_part_id"
 
   create_table "page_parts", :force => true do |t|
@@ -110,7 +133,6 @@ ActiveRecord::Schema.define(:version => 20110807161104) do
     t.datetime "updated_at"
   end
 
-  add_index "page_translations", ["locale"], :name => "index_page_translations_on_locale"
   add_index "page_translations", ["page_id"], :name => "index_page_translations_on_page_id"
 
   create_table "pages", :force => true do |t|
